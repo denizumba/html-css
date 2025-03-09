@@ -7,7 +7,9 @@ body {
 }
 
 caption {
-    background-color: gray;
+    background-color: lightgray;
+    padding: 10px;
+    font: 1.5em bold;
     color: black;
 }
 
@@ -29,4 +31,11 @@ td, th {
 
 td.num {
     text-align: right;
+}
+
+/* Efeito zebrado
+    Para tal, podemos usar os valores 2n, 2n-1, odd ou even.
+*/
+tbody > tr:nth-child(even) {
+    background-color: lightgray;
 }
