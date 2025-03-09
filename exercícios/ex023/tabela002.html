@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Minha segunda tabela</h1>
+    <caption>População de cada província</caption>
     <table>
         <thead>
             <tr>
-                <th>Província</th>
-                <th>População(Censo 2014)</th>
+                <th scope="col">Província</th>
+                <th scope="col" style="width: 50px;">População(2014)</th>
             </tr>
         </thead>
         <tbody>
@@ -87,8 +87,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total</td>
-                <td class="num">25 789 024</td>
+                <th scope="row">Total</td>
+                <th scope="row" class="num">25 789 024</td>
             </tr>
         </tfoot>
     </table>
