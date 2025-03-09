@@ -19,7 +19,7 @@ table {
 }
 
 thead, tfoot {
-    background-color: #595959;
+    background-color: #383838;
     font: 20px bold;
     color: white;
 }
@@ -31,6 +31,15 @@ td, th {
 
 td.num {
     text-align: right;
+}
+
+/* 
+    Cabeçalho fixo
+*/
+thead > tr > th {
+    background-color: #383838;
+    position: sticky;
+    top: -1px;
 }
 
 /* Efeito zebrado
