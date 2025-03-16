@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form007</title>
+</head>
+<body>
+    <h1>Select, datalist e textarea.</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icars">Estado: </label>
+            <select name="cars" id="icars">
+                <optgroup label="Carros Usados">
+                    <option value="volvo">Volvo</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">audi</option>
+                </optgroup>
+
+                <optgroup label="Carros Novos">
+                    <option value="ferrari">Ferrari</option>
+                    <option value="elantra">Elantra</option>
+                    <option value="i10" selected>i10</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ibrowser">Escolha um navegador: </label>
+            <input type="text" name="browser" id="ibrowser" list="browsers">
+            <!--Requer melhor compreensão-->
+            <datalist id="browsers">
+                <!--Aqui, preencher os options não é obrigatório, os valores mais importantes são descritos no value-->
+                <option value="Safari">
+                <option value="Firefox">
+                <option value="Brave">Br</option>
+                <option value="Edge">Ed</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <!--Requer melhor compreensão-->
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem aqui..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
