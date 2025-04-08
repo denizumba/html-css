@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: rgb(0, 95, 95);
+    background-color: #005f5f;
 }
 header {
     background-color: #00c0c0;
@@ -20,18 +20,33 @@ header > h1 {
     padding: 50px;
 }
 
-menu {
-    background-color: rgb(0, 82, 82);
+#itens {
+    background-color: #002020;
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#itens:hover {
+    background-color: #afffffd7;
+    color: black;
+}
+
+menu {
+    background-color: #005252;
+    display: none;
 }
 
 menu ul {
     list-style-type: none;
     background-color: darkcyan;
-    padding: 20px;
+    padding: 10px;
 }
 
-menu ul > li > a {
+menu ul > li {
+    background-color: #005f5f;
     color: white;
     text-decoration: none;
     display: block;
@@ -39,7 +54,7 @@ menu ul > li > a {
     padding: 15px;
     font-weight: bold;
     border-radius: 5px;
-    border-top: 2px solid cyan ;
+    cursor: pointer;
 }
 
 menu li:hover {
@@ -48,7 +63,7 @@ menu li:hover {
 }
 
 main {
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     margin-top: 10px;
     padding: 15px;
